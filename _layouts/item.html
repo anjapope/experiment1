@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="item-detail">
+    <h1>{{ page.title }}</h1>
+    
+    {% if page.image %}
+    <div class="item-image">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+    
+    <div class="item-content">
+        {{ content }}
+    </div>
+    
+    {% if page.metadata %}
+    <div class="item-metadata">
+        <h2>Details</h2>
+        <dl>
+            {% for item in page.metadata %}
+            <dt>{{ item[0] }}</dt>
+            <dd>{{ item[1] }}</dd>
+            {% endfor %}
+        </dl>
+    </div>
+    {% endif %}
+</div>

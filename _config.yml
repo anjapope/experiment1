@@ -1,0 +1,27 @@
+# Jekyll configuration for Ivory Items Interactive Showcase
+
+title: Ivory Items Showcase
+description: An interactive showcase for ivory items
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collections for ivory items
+collections:
+  items:
+    output: true
+    permalink: /items/:path/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .bundle
