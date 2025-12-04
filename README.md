@@ -7,6 +7,8 @@ It is now set up as a **Jekyll site**, so you can:
 - Deploy it via GitHub Pages
 - Later merge it into the main Archivory Jekyll workspace.
 
+> **⚠️ Important:** Before running the site, you must download the actual Alpine.js library (see [Running locally](#running-locally) section below). The current `assets/js/vendor/alpine.min.js` is a placeholder and will not provide full functionality.
+
 ## Structure
 
 ```text
@@ -44,17 +46,28 @@ It is now set up as a **Jekyll site**, so you can:
 
 ## Running locally
 
-1. Install Jekyll and Bundler if you don't have them:
+1. **Download Alpine.js** (required for interactive functionality):
+   - Download the latest Alpine v3 build from https://alpinejs.dev
+   - Replace `assets/js/vendor/alpine.min.js` with the downloaded file
+   - Direct link: https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js
+   - Or install via npm: `npm install alpinejs`
+
+2. Install Jekyll and Bundler if you don't have them:
    ```bash
    gem install bundler jekyll
    ```
 
-2. From this repo directory, run:
+3. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+4. From this repo directory, run:
    ```bash
    bundle exec jekyll serve
    ```
 
-3. Open your browser at `http://localhost:4000`.
+5. Open your browser at `http://localhost:4000`.
 
 ## How data flows
 
