@@ -37,7 +37,7 @@ It is now set up as a **Jekyll site**, so you can:
     │   └── reset.css
     ├── images/
     │   ├── placeholders/
-    │   │   └── placeholder.jpg
+    │   │   └── placeholder.svg  # Replace with actual .jpg images
     │   └── objects/
     └── js/
         └── vendor/
