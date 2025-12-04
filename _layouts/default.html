@@ -17,8 +17,8 @@
       };
     </script>
 
-    <!-- Alpine.js and app script -->
-    <script defer src="{{ '/assets/js/vendor/alpine.min.js' | relative_url }}"></script>
+    <!-- Alpine.js v3 CDN and app script -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
     <script defer src="{{ '/pathways.js' | relative_url }}"></script>
   </head>
   <body x-data="pathwaysApp()" x-init="init()">
